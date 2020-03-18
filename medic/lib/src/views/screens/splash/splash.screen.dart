@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medic/src/utils/theme/app_color.dart';
 import 'package:medic/src/utils/theme/app_font.dart';
+import 'package:medic/src/views/screens/onboarding/on_boarding.screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -11,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-//    openStartScreen();
+    openStartScreen();
   }
 
   @override
@@ -45,10 +46,12 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
-//  void openStartScreen() {
-//    Future.delayed(Duration(seconds: 3), () {
-//      Navigator.pushNamedAndRemoveUntil(
-//          context, RoutePath.rootRoute, (_) => false);
-//    });
-//  }
+  void openStartScreen() {
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => OnBoardingScreen()),
+          (_) => false);
+    });
+  }
 }
