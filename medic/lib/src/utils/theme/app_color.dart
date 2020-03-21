@@ -5,5 +5,5 @@ class AppColor {
   static const DARK_COLOR = Color(0xff313450);
   static const BROWN_COLOR = Color(0xff898A8F);
   static const GREEN_COLOR = Color(0xff94A5A6);
-  static const SMOKE_COLOR = Color(0xfff5f5f5);
+  static const SMOKE_COLOR = Color(0xfff6f6f6);
 }

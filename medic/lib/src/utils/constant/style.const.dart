@@ -8,7 +8,7 @@ class AppStyling {
       .copyWith(color: AppColor.DEFAULT_COLOR, fontSize: 16.0);
   static final TextStyle MEDICO =
       AppFont.MONTSERRAT_BOLD.copyWith(color: Colors.white, fontSize: 40.0);
-  static final TextStyle AGREE_TERMS =
+  static final TextStyle BROWN_LIGHT_TEXT =
       AppFont.POPPINS_LIGHT.copyWith(fontSize: 11.0,color: AppColor.BROWN_COLOR);
 
   //BUTTON LABEL

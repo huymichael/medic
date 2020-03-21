@@ -5,7 +5,9 @@ import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/images.const.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
 import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/routes/route.dart';
 import 'package:medic/src/utils/theme/app_color.dart';
+import 'package:medic/src/views/screens/login/login_by_phone.screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -66,7 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   elevation: 3.0,
                   borderRadius: 30.0,
                   onPress: () {
-                    print('213');
+                    Routing().navigateTo(context, LoginByPhoneScreen());
                   },
                 ),
                 WidgetSpacer(height: 15.0),
@@ -89,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 WidgetSpacer(height: 30.0),
                 Text(
                   StringConstant.AGREE_TERMS,
-                  style: AppStyling.AGREE_TERMS,
+                  style: AppStyling.BROWN_LIGHT_TEXT,
                   textAlign: TextAlign.center,
                 ),
               ],
