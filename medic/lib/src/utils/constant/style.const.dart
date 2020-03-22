@@ -8,8 +8,10 @@ class AppStyling {
       .copyWith(color: AppColor.DEFAULT_COLOR, fontSize: 16.0);
   static final TextStyle MEDICO =
       AppFont.MONTSERRAT_BOLD.copyWith(color: Colors.white, fontSize: 40.0);
-  static final TextStyle BROWN_LIGHT_TEXT =
-      AppFont.POPPINS_LIGHT.copyWith(fontSize: 11.0,color: AppColor.BROWN_COLOR);
+  static final TextStyle BROWN_LIGHT_TEXT_11 = AppFont.POPPINS_LIGHT
+      .copyWith(fontSize: 11.0, color: AppColor.BROWN_COLOR);
+  static final TextStyle BROWN_LIGHT_TEXT_14 = AppFont.POPPINS_LIGHT
+      .copyWith(fontSize: 14.0, color: AppColor.BROWN_COLOR);
 
   //BUTTON LABEL
   static final TextStyle LOGIN_BUTTON =

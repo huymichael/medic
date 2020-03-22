@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medic/src/utils/theme/app_color.dart';
 
 class RoundedButton extends StatelessWidget {
   RoundedButton(
@@ -41,12 +42,12 @@ class RoundedButton extends StatelessWidget {
             Text(
               buttonLabel,
               textAlign: TextAlign.center,
-              style: buttonLabelStyle,
+              style: buttonLabelStyle ?? TextStyle(color: Colors.white),
             ),
           ],
         ),
         onPressed: onPress,
-        color: buttonColor,
+        color: buttonColor ?? AppColor.DEFAULT_COLOR,
       ),
     );
   }

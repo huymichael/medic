@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 WidgetSpacer(height: 30.0),
                 Text(
                   StringConstant.AGREE_TERMS,
-                  style: AppStyling.BROWN_LIGHT_TEXT,
+                  style: AppStyling.BROWN_LIGHT_TEXT_11,
                   textAlign: TextAlign.center,
                 ),
               ],
