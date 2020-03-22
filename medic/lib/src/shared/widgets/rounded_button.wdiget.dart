@@ -1,33 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:medic/src/utils/theme/app_color.dart';
 
 class RoundedButton extends StatelessWidget {
   RoundedButton(
       {@required this.buttonLabel,
+      @required this.onPress,
       this.height,
       this.buttonLabelStyle,
       this.buttonColor,
-      @required this.onPress});
+      this.buttonIcon,
+      this.elevation,
+      this.borderRadius});
 
   final String buttonLabel;
   final TextStyle buttonLabelStyle;
   final Function onPress;
   final Color buttonColor;
   final double height;
+  final Widget buttonIcon;
+  final double elevation;
+  final double borderRadius;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: height ?? 50.0,
       child: RaisedButton(
+        elevation: elevation ?? 0.0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(borderRadius ?? 15.0),
         ),
-        child: Text(
-          buttonLabel,
-          style: buttonLabelStyle,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            buttonIcon != null
+                ? Container(
+                    margin: EdgeInsets.only(right: 10.0),
+                    child: buttonIcon,
+                  )
+                : Container(),
+            Text(
+              buttonLabel,
+              textAlign: TextAlign.center,
+              style: buttonLabelStyle ?? TextStyle(color: Colors.white),
+            ),
+          ],
         ),
         onPressed: onPress,
-        color: buttonColor,
+        color: buttonColor ?? AppColor.DEFAULT_COLOR,
       ),
     );
   }

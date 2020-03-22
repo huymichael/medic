@@ -70,7 +70,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   child: Container(
                     child: Text(
                       StringConstant.SKIP,
-                      style: Styling.SKIP_ON_BOARD,
+                      style: AppStyling.SKIP_ON_BOARD,
                     ),
                   ),
                 ),
