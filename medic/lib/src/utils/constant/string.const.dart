@@ -4,8 +4,10 @@ class StringConstant {
 
   //LABEL
   static const MOBILE_NUM = 'Mobile Number';
-  static const GOOGLE = 'Google';
+  static const MAIL = 'E-Mail';
   static const SUBMIT = 'Submit';
+  static const DOCTOR_NEARBY = 'Doctor nearby you';
+  static const SEE_ALL = 'See All';
 
   // APP ACTION
   static const SKIP = 'Skip';
@@ -21,4 +23,11 @@ class StringConstant {
   static const AGREE_TERMS = 'By continuing, you agree to Terms & Conditions';
   static const ENTER_MOBILE =
       'Enter your mobile number we will sendyou the OTP to verify later';
+  static const ENTER_EMAIL = 'Sign in to your account';
+  static const DOCTOR = 'Doctor';
+  static const DOCTOR_DECS = 'Search doctor\naround you';
+  static const MEDICINES = 'Medicines';
+  static const MEDICINES_DECS = 'Order Medicine\nto home';
+  static const DIAGNOSTIC = 'Diagnostic';
+  static const DIAGNOSTIC_DECS = 'Book test at\nDoorstep';
 }

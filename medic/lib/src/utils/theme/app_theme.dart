@@ -15,7 +15,7 @@ class AppTheme {
 
   static final customTheme = ThemeData(
     primaryColor: AppColor.DEFAULT_COLOR,
-    scaffoldBackgroundColor: AppColor.SMOKE_COLOR,
+    scaffoldBackgroundColor: AppColor.BACKGROUND_COLOR,
     brightness: Brightness.light,
     textTheme: _textTheme,
   );
