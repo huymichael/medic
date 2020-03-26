@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
 import 'package:medic/src/utils/constant/style.const.dart';
-import 'package:medic/src/utils/theme/app_color.dart';
 
 class DoctorNearby extends StatefulWidget {
   @override
@@ -39,27 +38,69 @@ class _DoctorNearbyState extends State<DoctorNearby> {
             height: 40.0,
           ),
           Card(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15.0))),
             child: Container(
-              height: 150.0,
-              width: 140.0,
-              child: Stack(
-                overflow: Overflow.visible,
+              padding: EdgeInsets.symmetric(horizontal: 15.0),
+              width: 160.0,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  Positioned.fill(
-                    top: -30,
-                    child: Align(
-                      alignment: Alignment.topCenter,
-                      child: CircleAvatar(
-                        radius: 30.0,
-                        backgroundImage: AssetImage('assets/images/img/corona_virus.jpg'),
-                        backgroundColor: Colors.white,
-                      ),
+                  Container(
+                    height: 30.0,
+                    child: Stack(
+                      overflow: Overflow.visible,
+                      children: <Widget>[
+                        Positioned.fill(
+                          top: -30,
+                          child: Align(
+                            alignment: Alignment.topCenter,
+                            child: CircleAvatar(
+                              radius: 30.0,
+                              backgroundImage: AssetImage(
+                                  'assets/images/img/corona_virus.jpg'),
+                              backgroundColor: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  )
+                  ),
+                  WidgetSpacer(height: 10.0),
+                  Text(
+                    'Dr. Alina James',
+                    style: AppStyling.DARK_2_POPPINS_SEMI_BOLD_10,
+                  ),
+                  Text(
+                    'B.Sc, MBBS, DDVL, MD-Dermitologist',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppStyling.BROWN_REGULAR_TEXT_11,
+                  ),
+                  WidgetSpacer(
+                    height: 15.0,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.star, color: Colors.yellow),
+                      WidgetSpacer(width: 5.0),
+                      Text(
+                        '4.3',
+                        style: AppStyling.BROWN_REGULAR_TEXT_15,
+                      ),
+                    ],
+                  ),
+                  WidgetSpacer(
+                    height: 18.0,
+                  ),
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );

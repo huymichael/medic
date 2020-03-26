@@ -22,6 +22,15 @@ class AppStyling {
   static final TextStyle DARK_POPPINS_SEMI_BOLD_14 =
       AppFont.POPPINS_SEMI_BOLD.copyWith(fontSize: 14.0,color: AppColor.DARK_COLOR_1);
 
+  static final TextStyle DARK_2_POPPINS_SEMI_BOLD_10 =
+      AppFont.POPPINS_SEMI_BOLD.copyWith(fontSize: 14.0,color: AppColor.DARK_COLOR_2);
+
+  static final TextStyle BROWN_REGULAR_TEXT_11 = AppFont.POPPINS
+      .copyWith(fontSize: 11.0, color: AppColor.BROWN_COLOR);
+
+  static final TextStyle BROWN_REGULAR_TEXT_15 = AppFont.POPPINS
+      .copyWith(fontSize: 15.0, color: AppColor.BROWN_COLOR);
+
   static final TextStyle BROWN_LIGHT_TEXT_11 = AppFont.POPPINS_LIGHT
       .copyWith(fontSize: 11.0, color: AppColor.BROWN_COLOR);
 
