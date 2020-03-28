@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
-import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/constant/text_style.const.dart';
 import 'package:medic/src/utils/theme/app_color.dart';
 
 class ShareFriendCode extends StatelessWidget {
@@ -31,7 +31,7 @@ class ShareFriendCode extends StatelessWidget {
                     StringConstant.SHARE_CODE,
                     maxLines: 2,
                     softWrap: true,
-                    style: AppStyling.POPPINS_SEMI_BOLD_12
+                    style: TextStyling.POPPINS_SEMI_BOLD_12
                         .copyWith(color: AppColor.DARK_COLOR_1),
                   ),
                 ),
@@ -40,7 +40,7 @@ class ShareFriendCode extends StatelessWidget {
                   child: TextFormField(
                     enabled: false,
                     initialValue: 'NHDFG',
-                    style: AppStyling.BROWN_REGULAR_TEXT_15,
+                    style: TextStyling.BROWN_REGULAR_TEXT_15,
                     decoration: InputDecoration(
                         suffixIcon: Icon(Icons.share),
                         isDense: true,

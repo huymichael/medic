@@ -4,7 +4,7 @@ import 'package:medic/src/shared/widgets/doctor_card.widget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/images.const.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
-import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/constant/text_style.const.dart';
 
 class DoctorNearby extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class _DoctorNearbyState extends State<DoctorNearby> {
             children: <Widget>[
               Text(
                 StringConstant.DOCTOR_NEARBY,
-                style: AppStyling.DARK_POPPINS_SEMI_BOLD_14,
+                style: TextStyling.DARK_POPPINS_SEMI_BOLD_14,
               ),
               InkWell(
                 onTap: () {
@@ -31,7 +31,7 @@ class _DoctorNearbyState extends State<DoctorNearby> {
                 },
                 child: Text(
                   StringConstant.SEE_ALL,
-                  style: AppStyling.LIGHT_POPPINS_SEMI_BOLD_12,
+                  style: TextStyling.LIGHT_POPPINS_SEMI_BOLD_12,
                 ),
               ),
             ],

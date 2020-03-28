@@ -9,4 +9,5 @@ class AppColor {
   static const GREEN_COLOR = Color(0xff94A5A6);
   static const BACKGROUND_COLOR = Color(0xfff5f5f5);
   static const SMOKE_COLOR = Color(0xfff6f6f6);
+  static const LIGHT_GREY = Color(0xffececec);
 }

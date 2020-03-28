@@ -3,7 +3,9 @@ import 'package:medic/src/shared/widgets/circle_icon_button.widget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/images.const.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
-import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/constant/text_style.const.dart';
+import 'package:medic/src/utils/routes/route.dart';
+import 'package:medic/src/views/screens/search_doctor/search_doctor.screen.dart';
 
 class HomeHeader extends StatelessWidget {
   @override
@@ -18,7 +20,7 @@ class HomeHeader extends StatelessWidget {
             padding: const EdgeInsets.only(left: 26.0),
             child: Text(
               StringConstant.MEDICO,
-              style: AppStyling.MEDICO.copyWith(fontSize: 17.0),
+              style: TextStyling.MEDIUM_SCREEN_HEADER_LABEL,
             ),
           ),
         ),
@@ -42,15 +44,17 @@ class HomeHeader extends StatelessWidget {
                           ImageConstant.NURSE_ICON,
                           height: 40.0,
                         ),
-                        onPress: () {},
+                        onPress: () {
+                          Routing().navigateTo(context, SearchDoctorScreen());
+                        },
                       ),
                       WidgetSpacer(height: 5.0),
                       Text(StringConstant.DOCTOR,
-                          style: AppStyling.POPPINS_SEMI_BOLD_14),
+                          style: TextStyling.POPPINS_SEMI_BOLD_14),
                       Text(
                         StringConstant.DOCTOR_DECS,
                         textAlign: TextAlign.center,
-                        style: AppStyling.BROWN_LIGHT_TEXT_11,
+                        style: TextStyling.BROWN_LIGHT_TEXT_11,
                       ),
                     ],
                   ),
@@ -68,11 +72,11 @@ class HomeHeader extends StatelessWidget {
                       ),
                       WidgetSpacer(height: 5.0),
                       Text(StringConstant.MEDICINES,
-                          style: AppStyling.POPPINS_SEMI_BOLD_14),
+                          style: TextStyling.POPPINS_SEMI_BOLD_14),
                       Text(
                         StringConstant.MEDICINES_DECS,
                         textAlign: TextAlign.center,
-                        style: AppStyling.BROWN_LIGHT_TEXT_11,
+                        style: TextStyling.BROWN_LIGHT_TEXT_11,
                       ),
                     ],
                   ),
@@ -90,11 +94,11 @@ class HomeHeader extends StatelessWidget {
                       ),
                       WidgetSpacer(height: 5.0),
                       Text(StringConstant.DIAGNOSTIC,
-                          style: AppStyling.POPPINS_SEMI_BOLD_14),
+                          style: TextStyling.POPPINS_SEMI_BOLD_14),
                       Text(
                         StringConstant.DIAGNOSTIC_DECS,
                         textAlign: TextAlign.center,
-                        style: AppStyling.BROWN_LIGHT_TEXT_11,
+                        style: TextStyling.BROWN_LIGHT_TEXT_11,
                       ),
                     ],
                   ),
