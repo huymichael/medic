@@ -8,6 +8,7 @@ class ImageConstant {
   static const PIN_CODE = 'assets/images/icons/pin_code.png';
   static const PHONE_MESSAGE = 'assets/images/icons/phone_message.png';
   static const MESSAGING = 'assets/images/icons/messaging.png';
+  static const CORONA = 'assets/images/img/corona_virus.jpg';
 
   //Icon
   static const NURSE_ICON = 'assets/images/icons/nurse.png';

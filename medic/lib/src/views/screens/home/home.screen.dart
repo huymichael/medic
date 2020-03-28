@@ -4,6 +4,7 @@ import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/theme/app_color.dart';
 import 'package:medic/src/views/screens/home/widgets/docor_nearby.widget.dart';
 import 'package:medic/src/views/screens/home/widgets/home_header.widget.dart';
+import 'package:medic/src/views/screens/home/widgets/share_friend_code.widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -32,7 +33,6 @@ class HomeScreen extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         decoration: BoxDecoration(
-                            color: Colors.red,
                             borderRadius:
                                 BorderRadius.all(Radius.circular(20.0)),
                             image: DecorationImage(
@@ -41,10 +41,11 @@ class HomeScreen extends StatelessWidget {
                                 fit: BoxFit.cover)),
                         height: 150.0,
                       ),
-                      WidgetSpacer(
-                        height: 40.0,
-                      ),
-                      _buildDoctorNearby()
+                      WidgetSpacer(height: 30.0),
+                      _buildDoctorNearby(),
+                      WidgetSpacer(height: 30.0),
+                      _buildShareFriendCode(),
+                      WidgetSpacer(height: 20.0)
                     ],
                   ),
                 ),
@@ -59,4 +60,6 @@ class HomeScreen extends StatelessWidget {
   _buildHeader() => HomeHeader();
 
   _buildDoctorNearby() => DoctorNearby();
+
+  _buildShareFriendCode() => ShareFriendCode();
 }

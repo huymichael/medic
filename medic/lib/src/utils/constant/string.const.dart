@@ -8,6 +8,7 @@ class StringConstant {
   static const SUBMIT = 'Submit';
   static const DOCTOR_NEARBY = 'Doctor nearby you';
   static const SEE_ALL = 'See All';
+  static const SHARE_CODE = 'Share the Given code';
 
   // APP ACTION
   static const SKIP = 'Skip';

@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:medic/src/shared/widgets/doctor_card.widget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
+import 'package:medic/src/utils/constant/images.const.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
 import 'package:medic/src/utils/constant/style.const.dart';
 
@@ -35,72 +37,39 @@ class _DoctorNearbyState extends State<DoctorNearby> {
             ],
           ),
           WidgetSpacer(
-            height: 40.0,
+            height: 20.0,
           ),
-          Card(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(15.0))),
+          SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
+            scrollDirection: Axis.horizontal,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 15.0),
-              width: 160.0,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisSize: MainAxisSize.min,
+              padding: const EdgeInsets.only(top: 30.0),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Container(
-                    height: 30.0,
-                    child: Stack(
-                      overflow: Overflow.visible,
-                      children: <Widget>[
-                        Positioned.fill(
-                          top: -30,
-                          child: Align(
-                            alignment: Alignment.topCenter,
-                            child: CircleAvatar(
-                              radius: 30.0,
-                              backgroundImage: AssetImage(
-                                  'assets/images/img/corona_virus.jpg'),
-                              backgroundColor: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                  DoctorCard(
+                    imgUrl: ImageConstant.CORONA,
+                    doctorName: 'Dr. Alina James',
+                    doctorCer: 'B.Sc, MBBS, DDVL, MD-Dermitologist',
+                    rating: 4.2,
                   ),
-                  WidgetSpacer(height: 10.0),
-                  Text(
-                    'Dr. Alina James',
-                    style: AppStyling.DARK_2_POPPINS_SEMI_BOLD_10,
+                  DoctorCard(
+                    imgUrl: ImageConstant.CORONA,
+                    doctorName: 'Dr. Steve Robert',
+                    doctorCer: 'B.Sc, MBBS, DDVL',
+                    rating: 4.3,
                   ),
-                  Text(
-                    'B.Sc, MBBS, DDVL, MD-Dermitologist',
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppStyling.BROWN_REGULAR_TEXT_11,
-                  ),
-                  WidgetSpacer(
-                    height: 15.0,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(Icons.star, color: Colors.yellow),
-                      WidgetSpacer(width: 5.0),
-                      Text(
-                        '4.3',
-                        style: AppStyling.BROWN_REGULAR_TEXT_15,
-                      ),
-                    ],
-                  ),
-                  WidgetSpacer(
-                    height: 18.0,
+                  DoctorCard(
+                    imgUrl: ImageConstant.CORONA,
+                    doctorName: 'Dr. Senila Fig',
+                    doctorCer: 'B.Sc, MBBS, DDVL, MD-Dermitologist',
+                    rating: 3.8,
                   ),
                 ],
               ),
             ),
-          ),
+          )
         ],
       ),
     );
