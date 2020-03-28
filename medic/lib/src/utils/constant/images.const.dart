@@ -7,5 +7,11 @@ class ImageConstant {
   static const VERIFICATION_CARD = 'assets/images/img/verification.jpg';
   static const PIN_CODE = 'assets/images/icons/pin_code.png';
   static const PHONE_MESSAGE = 'assets/images/icons/phone_message.png';
-//Icon
+  static const MESSAGING = 'assets/images/icons/messaging.png';
+  static const CORONA = 'assets/images/img/corona_virus.jpg';
+
+  //Icon
+  static const NURSE_ICON = 'assets/images/icons/nurse.png';
+  static const PILL_ICON = 'assets/images/icons/pill.png';
+  static const MICROSCOPE_ICON = 'assets/images/icons/microscope.png';
 }

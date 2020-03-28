@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:medic/src/shared/widgets/rounded_button.wdiget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
@@ -8,15 +7,14 @@ import 'package:medic/src/utils/constant/style.const.dart';
 import 'package:medic/src/utils/routes/route.dart';
 import 'package:medic/src/views/screens/home/home.screen.dart';
 
-class LoginByPhoneScreen extends StatefulWidget {
+class LoginByMailScreen extends StatefulWidget {
   @override
-  _LoginByPhoneScreenState createState() => _LoginByPhoneScreenState();
+  _LoginByMailScreenState createState() => _LoginByMailScreenState();
 }
 
-class _LoginByPhoneScreenState extends State<LoginByPhoneScreen> {
+class _LoginByMailScreenState extends State<LoginByMailScreen> {
   @override
   Widget build(BuildContext context) {
-    final double _screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
@@ -47,7 +45,7 @@ class _LoginByPhoneScreenState extends State<LoginByPhoneScreen> {
                     Container(
                       height: 100.0,
                       child: Image.asset(
-                        ImageConstant.PHONE_MESSAGE,
+                        ImageConstant.MESSAGING,
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -55,7 +53,7 @@ class _LoginByPhoneScreenState extends State<LoginByPhoneScreen> {
                       height: 20.0,
                     ),
                     Text(
-                      StringConstant.ENTER_MOBILE,
+                      StringConstant.ENTER_EMAIL,
                       textAlign: TextAlign.center,
                       style: AppStyling.BROWN_LIGHT_TEXT_14,
                     )
@@ -70,30 +68,19 @@ class _LoginByPhoneScreenState extends State<LoginByPhoneScreen> {
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
                     children: <Widget>[
-                      Container(
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Flexible(
-                              child: TextFormField(
-                                keyboardType: TextInputType.phone,
-                                initialValue: '+84',
-                              ),
-                              flex: 2,
-                            ),
-                            WidgetSpacer(
-                              width: 15.0,
-                            ),
-                            Flexible(
-                              child: TextFormField(
-                                keyboardType: TextInputType.phone,
-                                initialValue: '123456789',
-                              ),
-                              flex: 5,
-                            ),
-                          ],
+                      TextFormField(
+                        decoration: InputDecoration(
+                          hintText: 'Your Email',
                         ),
+                        keyboardType: TextInputType.emailAddress,
+                      ),
+                      WidgetSpacer(height: 15.0),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          hintText: 'Password',
+                        ),
+                        keyboardType: TextInputType.visiblePassword,
+                        obscureText: true,
                       ),
                       WidgetSpacer(
                         height: 30.0,

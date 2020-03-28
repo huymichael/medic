@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:medic/src/shared/widgets/rounded_button.wdiget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/images.const.dart';
@@ -7,6 +6,7 @@ import 'package:medic/src/utils/constant/string.const.dart';
 import 'package:medic/src/utils/constant/style.const.dart';
 import 'package:medic/src/utils/routes/route.dart';
 import 'package:medic/src/utils/theme/app_color.dart';
+import 'package:medic/src/views/screens/login/login_by_mail.screen.dart';
 import 'package:medic/src/views/screens/login/login_by_phone.screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -74,18 +74,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 WidgetSpacer(height: 15.0),
                 RoundedButton(
                   buttonIcon: Icon(
-                    FontAwesomeIcons.google,
+                    Icons.mail_outline,
                     size: 18.0,
                     color: Colors.red,
                   ),
-                  buttonLabel: StringConstant.GOOGLE,
+                  buttonLabel: StringConstant.MAIL,
                   buttonColor: Colors.white,
                   elevation: 3.0,
                   borderRadius: 30.0,
                   buttonLabelStyle:
                       AppStyling.LOGIN_BUTTON.copyWith(color: Colors.red),
                   onPress: () {
-                    print('234');
+                    Routing().navigateTo(context, LoginByMailScreen());
                   },
                 ),
                 WidgetSpacer(height: 30.0),
