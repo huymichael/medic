@@ -27,7 +27,7 @@ class SearchDoctorHeader extends StatelessWidget {
               ),
               Text(
                 StringConstant.FIND_AND_BOOK,
-                style: TextStyling.MEDIUM_SCREEN_HEADER_LABEL,
+                style: TextStyling.WHITE_INCREASED_MONT_BOLD,
               )
             ],
           ),
@@ -42,9 +42,12 @@ class SearchDoctorHeader extends StatelessWidget {
               child: TextFormField(
                 maxLines: 1,
                 decoration: WidgetStyling.WHITE_HEADER_SEARCH.copyWith(
-                    prefixIcon: Icon(Icons.search,color: Color(0xffc7c7c7),),
+                    prefixIcon: Icon(
+                      Icons.search,
+                      color: AppColor.VERY_LIGHT_GREY,
+                    ),
                     hintStyle: AppFont.POPPINS_ITALIC
-                        .copyWith(color: Color(0xffc7c7c7), fontSize: 14.0),
+                        .copyWith(color: AppColor.VERY_LIGHT_GREY),
                     hintText: StringConstant.SEARCH_DOCTOR_HINT),
               ),
             ),

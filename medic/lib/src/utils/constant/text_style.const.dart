@@ -7,39 +7,35 @@ class TextStyling {
   static final TextStyle SKIP_ON_BOARD = AppFont.MONTSERRAT_BOLD
       .copyWith(color: AppColor.DEFAULT_COLOR, fontSize: 16.0);
 
-  static final TextStyle XLARGE_SCREEN_HEADER_LABEL =
+  static final TextStyle LARGE_MONT_BOLD =
       AppFont.MONTSERRAT_BOLD.copyWith(color: Colors.white, fontSize: 40.0);
 
-  static final TextStyle MEDIUM_SCREEN_HEADER_LABEL =
+  static final TextStyle WHITE_INCREASED_MONT_BOLD =
       AppFont.MONTSERRAT_BOLD.copyWith(color: Colors.white, fontSize: 17.0);
 
+  static final TextStyle LIGHT_TINY_POPPINS_SEMI_BOLD =
+      AppFont.TINY_POPPINS_SEMI_BOLD.copyWith(color: AppColor.LIGHT_COLOR);
 
-  static final TextStyle POPPINS_SEMI_BOLD_12 =
-      AppFont.POPPINS_SEMI_BOLD.copyWith(fontSize: 12.0);
+  static final TextStyle DARK_POPPINS_SEMI_BOLD =
+      AppFont.POPPINS_SEMI_BOLD.copyWith(color: AppColor.DARK_COLOR_1);
 
-  static final TextStyle POPPINS_SEMI_BOLD_14 =
-      AppFont.POPPINS_SEMI_BOLD.copyWith(fontSize: 14.0);
+  static final TextStyle DARK_2_POPPINS_SEMI_BOLD =
+      AppFont.POPPINS_SEMI_BOLD.copyWith(color: AppColor.DARK_COLOR_2);
 
-  static final TextStyle LIGHT_POPPINS_SEMI_BOLD_12 = AppFont.POPPINS_SEMI_BOLD
-      .copyWith(fontSize: 12.0, color: AppColor.LIGHT_COLOR);
+  static final TextStyle BROWN_TINY_POPINS =
+      AppFont.TINY_POPPINS.copyWith(color: AppColor.BROWN_COLOR);
 
-  static final TextStyle DARK_POPPINS_SEMI_BOLD_14 = AppFont.POPPINS_SEMI_BOLD
-      .copyWith(fontSize: 14.0, color: AppColor.DARK_COLOR_1);
+  static final TextStyle LIGHT_BROWN_TINY_POPINS =
+      AppFont.TINY_POPPINS.copyWith(color: AppColor.LIGHT_BROWN_COLOR);
 
-  static final TextStyle DARK_2_POPPINS_SEMI_BOLD_10 = AppFont.POPPINS_SEMI_BOLD
-      .copyWith(fontSize: 14.0, color: AppColor.DARK_COLOR_2);
+  static final TextStyle BROWN_POPINS =
+      AppFont.POPPINS.copyWith(color: AppColor.BROWN_COLOR);
 
-  static final TextStyle BROWN_REGULAR_TEXT_12 =
-      AppFont.POPPINS.copyWith(fontSize: 12.0, color: AppColor.BROWN_COLOR);
+  static final TextStyle BROWN_TINY_POPINS_LIGHT =
+      AppFont.TINY_POPPINS_LIGHT.copyWith(color: AppColor.BROWN_COLOR);
 
-  static final TextStyle BROWN_REGULAR_TEXT_15 =
-      AppFont.POPPINS.copyWith(fontSize: 15.0, color: AppColor.BROWN_COLOR);
-
-  static final TextStyle BROWN_LIGHT_TEXT_11 = AppFont.POPPINS_LIGHT
-      .copyWith(fontSize: 11.0, color: AppColor.BROWN_COLOR);
-
-  static final TextStyle BROWN_LIGHT_TEXT_14 = AppFont.POPPINS_LIGHT
-      .copyWith(fontSize: 14.0, color: AppColor.BROWN_COLOR);
+  static final TextStyle BROWN_POPINS_LIGHT =
+      AppFont.POPPINS_LIGHT.copyWith(color: AppColor.BROWN_COLOR);
 
   //BUTTON LABEL
   static final TextStyle LOGIN_BUTTON =

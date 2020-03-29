@@ -57,7 +57,7 @@ class _LoginByPhoneScreenState extends State<LoginByPhoneScreen> {
                     Text(
                       StringConstant.ENTER_MOBILE,
                       textAlign: TextAlign.center,
-                      style: TextStyling.BROWN_LIGHT_TEXT_14,
+                      style: TextStyling.BROWN_POPINS_LIGHT,
                     )
                   ],
                 ),

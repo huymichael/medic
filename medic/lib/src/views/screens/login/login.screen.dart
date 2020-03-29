@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Center(
                 child: Text(
                   StringConstant.MEDICO,
-                  style: TextStyling.XLARGE_SCREEN_HEADER_LABEL,
+                  style: TextStyling.LARGE_MONT_BOLD,
                 ),
               ),
             ),
@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 WidgetSpacer(height: 30.0),
                 Text(
                   StringConstant.AGREE_TERMS,
-                  style: TextStyling.BROWN_LIGHT_TEXT_11,
+                  style: TextStyling.BROWN_TINY_POPINS_LIGHT,
                   textAlign: TextAlign.center,
                 ),
               ],

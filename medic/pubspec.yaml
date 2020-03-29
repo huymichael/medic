@@ -41,6 +41,7 @@ flutter:
     - assets/fonts/
     - assets/fonts/montserrat/
     - assets/fonts/poppins/
+    - assets/data/
   fonts:
     - family: Monsterrat
       fonts:

@@ -11,6 +11,7 @@ class StringConstant {
   static const SHARE_CODE = 'Share the Given code';
   static const FIND_AND_BOOK = 'Find & Book';
   static const SEARCH_DOCTOR_HINT = 'Doctors, specialities, clinics...';
+  static const CONTACT_CLINIC = 'Contact Clinic';
 
 
 
@@ -35,4 +36,5 @@ class StringConstant {
   static const MEDICINES_DECS = 'Order Medicine\nto home';
   static const DIAGNOSTIC = 'Diagnostic';
   static const DIAGNOSTIC_DECS = 'Book test at\nDoorstep';
+  static const TOP_SPECIALTY = 'Top specialities';
 }

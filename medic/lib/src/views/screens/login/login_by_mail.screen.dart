@@ -55,7 +55,7 @@ class _LoginByMailScreenState extends State<LoginByMailScreen> {
                     Text(
                       StringConstant.ENTER_EMAIL,
                       textAlign: TextAlign.center,
-                      style: TextStyling.BROWN_LIGHT_TEXT_14,
+                      style: TextStyling.BROWN_POPINS_LIGHT,
                     )
                   ],
                 ),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/text_style.const.dart';
 
-class DoctorCard extends StatelessWidget {
-  DoctorCard(
+class DoctorBriefCard extends StatelessWidget {
+  DoctorBriefCard(
       {@required this.imgUrl,
       @required this.doctorName,
       @required this.doctorCer,
@@ -52,7 +52,7 @@ class DoctorCard extends StatelessWidget {
             WidgetSpacer(height: 15.0),
             Text(
               doctorName,
-              style: TextStyling.DARK_2_POPPINS_SEMI_BOLD_10,
+              style: TextStyling.DARK_2_POPPINS_SEMI_BOLD,
             ),
             WidgetSpacer(height: 10.0),
             doctorCer != null
@@ -60,7 +60,7 @@ class DoctorCard extends StatelessWidget {
                     'B.Sc, MBBS, DDVL, MD-Dermitologist',
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyling.BROWN_REGULAR_TEXT_12,
+                    style: TextStyling.BROWN_TINY_POPINS,
                   )
                 : Container(),
             WidgetSpacer(height: 10.0),
@@ -73,7 +73,7 @@ class DoctorCard extends StatelessWidget {
                       WidgetSpacer(width: 5.0),
                       Text(
                         '4.3',
-                        style: TextStyling.BROWN_REGULAR_TEXT_15,
+                        style: TextStyling.BROWN_POPINS,
                       ),
                     ],
                   )
