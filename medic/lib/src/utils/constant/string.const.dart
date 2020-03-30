@@ -12,6 +12,7 @@ class StringConstant {
   static const FIND_AND_BOOK = 'Find & Book';
   static const SEARCH_DOCTOR_HINT = 'Doctors, specialities, clinics...';
   static const CONTACT_CLINIC = 'Contact Clinic';
+  static const UNKNOWN = 'Unknown';
 
 
 
