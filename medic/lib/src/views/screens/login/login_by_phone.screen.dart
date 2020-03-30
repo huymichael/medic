@@ -4,7 +4,7 @@ import 'package:medic/src/shared/widgets/rounded_button.wdiget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/images.const.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
-import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/constant/text_style.const.dart';
 import 'package:medic/src/utils/routes/route.dart';
 import 'package:medic/src/views/screens/home/home.screen.dart';
 
@@ -57,7 +57,7 @@ class _LoginByPhoneScreenState extends State<LoginByPhoneScreen> {
                     Text(
                       StringConstant.ENTER_MOBILE,
                       textAlign: TextAlign.center,
-                      style: AppStyling.BROWN_LIGHT_TEXT_14,
+                      style: TextStyling.BROWN_POPINS_LIGHT,
                     )
                   ],
                 ),

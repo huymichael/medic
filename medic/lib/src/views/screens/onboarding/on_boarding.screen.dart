@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
-import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/constant/text_style.const.dart';
 import 'package:medic/src/utils/routes/route.dart';
 import 'package:medic/src/utils/theme/app_color.dart';
 import 'package:medic/src/views/screens/login/login.screen.dart';
@@ -70,7 +70,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   child: Container(
                     child: Text(
                       StringConstant.SKIP,
-                      style: AppStyling.SKIP_ON_BOARD,
+                      style: TextStyling.SKIP_ON_BOARD,
                     ),
                   ),
                 ),

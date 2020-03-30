@@ -3,7 +3,7 @@ import 'package:medic/src/shared/widgets/rounded_button.wdiget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/images.const.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
-import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/constant/text_style.const.dart';
 import 'package:medic/src/utils/routes/route.dart';
 import 'package:medic/src/utils/theme/app_color.dart';
 import 'package:medic/src/views/screens/login/login_by_mail.screen.dart';
@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Center(
                 child: Text(
                   StringConstant.MEDICO,
-                  style: AppStyling.MEDICO,
+                  style: TextStyling.LARGE_MONT_BOLD,
                 ),
               ),
             ),
@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     size: 18.0,
                   ),
                   buttonLabel: StringConstant.MOBILE_NUM,
-                  buttonLabelStyle: AppStyling.LOGIN_BUTTON
+                  buttonLabelStyle: TextStyling.LOGIN_BUTTON
                       .copyWith(color: AppColor.DEFAULT_COLOR),
                   buttonColor: Colors.white,
                   elevation: 3.0,
@@ -83,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   elevation: 3.0,
                   borderRadius: 30.0,
                   buttonLabelStyle:
-                      AppStyling.LOGIN_BUTTON.copyWith(color: Colors.red),
+                      TextStyling.LOGIN_BUTTON.copyWith(color: Colors.red),
                   onPress: () {
                     Routing().navigateTo(context, LoginByMailScreen());
                   },
@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 WidgetSpacer(height: 30.0),
                 Text(
                   StringConstant.AGREE_TERMS,
-                  style: AppStyling.BROWN_LIGHT_TEXT_11,
+                  style: TextStyling.BROWN_TINY_POPINS_LIGHT,
                   textAlign: TextAlign.center,
                 ),
               ],

@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:medic/src/shared/widgets/doctor_card.widget.dart';
+import 'package:medic/src/shared/widgets/doctor_brief_card.widget.dart';
 import 'package:medic/src/shared/widgets/spacer.widget.dart';
 import 'package:medic/src/utils/constant/images.const.dart';
 import 'package:medic/src/utils/constant/string.const.dart';
-import 'package:medic/src/utils/constant/style.const.dart';
+import 'package:medic/src/utils/constant/text_style.const.dart';
 
 class DoctorNearby extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class _DoctorNearbyState extends State<DoctorNearby> {
             children: <Widget>[
               Text(
                 StringConstant.DOCTOR_NEARBY,
-                style: AppStyling.DARK_POPPINS_SEMI_BOLD_14,
+                style: TextStyling.DARK_POPPINS_SEMI_BOLD,
               ),
               InkWell(
                 onTap: () {
@@ -31,7 +31,7 @@ class _DoctorNearbyState extends State<DoctorNearby> {
                 },
                 child: Text(
                   StringConstant.SEE_ALL,
-                  style: AppStyling.LIGHT_POPPINS_SEMI_BOLD_12,
+                  style: TextStyling.LIGHT_TINY_POPPINS_SEMI_BOLD,
                 ),
               ),
             ],
@@ -48,19 +48,19 @@ class _DoctorNearbyState extends State<DoctorNearby> {
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  DoctorCard(
+                  DoctorBriefCard(
                     imgUrl: ImageConstant.CORONA,
                     doctorName: 'Dr. Alina James',
                     doctorCer: 'B.Sc, MBBS, DDVL, MD-Dermitologist',
                     rating: 4.2,
                   ),
-                  DoctorCard(
+                  DoctorBriefCard(
                     imgUrl: ImageConstant.CORONA,
                     doctorName: 'Dr. Steve Robert',
                     doctorCer: 'B.Sc, MBBS, DDVL',
                     rating: 4.3,
                   ),
-                  DoctorCard(
+                  DoctorBriefCard(
                     imgUrl: ImageConstant.CORONA,
                     doctorName: 'Dr. Senila Fig',
                     doctorCer: 'B.Sc, MBBS, DDVL, MD-Dermitologist',
