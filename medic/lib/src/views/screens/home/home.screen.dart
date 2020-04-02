@@ -7,6 +7,8 @@ import 'package:medic/src/views/screens/home/widgets/home_header.widget.dart';
 import 'package:medic/src/views/screens/home/widgets/share_friend_code.widget.dart';
 
 class HomeScreen extends StatelessWidget {
+  HomeScreen({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
